@@ -1,9 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
+
+// TODO: Add a description paragraph
+// ContactHub is a simple yet powerful contact management application that allows users 
+// to store and organize all of their contacts in one place. 
+// With ContactHub, users can easily add, edit, and search for contacts, as well as
+//  view and manage their contact information, including phone numbers, email addresses, 
+// and physical addresses. ContactHub also offers advanced features such as contact tagging, 
+// notes, and reminders to help users stay on top of their contacts and never miss an important
+//  event or meeting. Overall, ContactHub provides a streamlined solution for managing all of 
+// your personal and professional contacts in one place.
 
 export default function Home() {
   return (
@@ -26,7 +36,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -119,5 +129,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
