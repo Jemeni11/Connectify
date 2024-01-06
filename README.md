@@ -1,3 +1,3 @@
-# ConnexusLink
+# Connectify
 
 A contact app
