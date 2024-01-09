@@ -8,11 +8,6 @@ export default function OtherFeatures() {
         "Share contact information with others effortlessly. Whether it's sending a colleague's contact details to a client or sharing a friend's info with a group, ConnexusLink makes it simple.",
     },
     {
-      title: "Contact Communication",
-      content:
-        "Stay connected with a single click. Call, email, or message your contacts directly from within the app. No need to switch between apps; it's all at your fingertips.",
-    },
-    {
       title: "Contact Notes",
       content:
         "Keep track of important details. Add personal notes or reminders for each contact. Never forget a birthday or an important detail again.",
