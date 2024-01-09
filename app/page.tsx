@@ -7,7 +7,6 @@ import RightArrow from "@/public/angle-circle-right-icon.svg";
 import Registration from "@/public/add-boy-user-icon.svg";
 
 import Logo from "@/public/favicon-32x32.png";
-import LogoMobile from "@/public/apple-touch-icon.png";
 
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
