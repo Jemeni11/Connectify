@@ -7,6 +7,15 @@ const withPWA = require("@ducanh2912/next-pwa").default({
   // sw: "service-worker.js",
 });
 
-const nextConfig = withPWA({});
+const nextConfig = withPWA({
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+      },
+    ],
+  },
+});
 
 module.exports = nextConfig;
