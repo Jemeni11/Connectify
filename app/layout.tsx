@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const meta = {
-  image: "https://res.cloudinary.com/dro4rspo2/image/upload/v1693898610/OG-Image_jianeb.png",
+  image: "https://connectify-jemeni.vercel.app/og.png",
   url: "https://connectify-jemeni.vercel.app",
   author: "Emmanuel Jemeni",
   name: "Connectify",
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
   },
   keywords: [meta.name, "Contacts", "Connectify"],
   creator: meta.author,
+  publisher: meta.author,
+  authors: [{ name: meta.author, url: "https://github.com/Jemeni11" }],
   metadataBase: new URL(meta.url),
   description: meta.description,
   openGraph: {
@@ -66,8 +69,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }
