@@ -3,8 +3,14 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Announcement from "@/components/Announcement";
 import { Button } from "@/components/ui/button";
+
 import RightArrow from "@/public/angle-circle-right-icon.svg";
 import Registration from "@/public/add-boy-user-icon.svg";
+import List from "@/public/edit-list-icon.svg";
+import Search from "@/public/magnifier-glass-icon.svg";
+import Details from "@/public/resume-cv-icon.svg";
+import ImportExport from "@/public/switch-icon.svg";
+import Communication from "@/public/discussion-icon.svg";
 
 import Logo from "@/public/favicon-32x32.png";
 
@@ -23,7 +29,7 @@ function scrollToNextSection(): void {
   });
 }
 
-type featuresGridItemType = { title: string; icon: StaticImageData; description: string };
+type featuresGridItemType = { title: string; icon: StaticImageData | any; description: string };
 
 function FeaturesGridItem({ title, icon, description }: featuresGridItemType) {
   return (
@@ -47,27 +53,27 @@ const featuresPartOne: featuresGridItemType[] = [
   },
   {
     title: "Contact List",
-    icon: Logo,
+    icon: List,
     description: "Effortlessly view and manage a comprehensive list of your contacts.",
   },
   {
     title: "Contact Search",
-    icon: Logo,
+    icon: Search,
     description: "Quickly find specific contacts with our robust search functionality.",
   },
   {
     title: "Contact Details",
-    icon: Logo,
+    icon: Details,
     description: "Access detailed information about each contact, from phone numbers to addresses.",
   },
   {
     title: "Contact Import/Export",
-    icon: Logo,
+    icon: ImportExport,
     description: "Seamlessly import contacts from external sources and export them in various formats.",
   },
   {
     title: "Contact Communication",
-    icon: Logo,
+    icon: Communication,
     description: "Stay connected with a single click. Call, email, or message your contacts with the app.",
   },
 ];
