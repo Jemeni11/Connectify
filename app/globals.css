@@ -75,6 +75,6 @@
   }
 }
 
-.FeaturesGridItem svg {
-  fill: rgb(134, 53, 46);
+.FeaturesGridItem img {
+  filter: invert(24%) sepia(73%) saturate(589%) hue-rotate(317deg) brightness(94%) contrast(93%);
 }
