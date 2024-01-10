@@ -2,7 +2,9 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Announcement from "@/components/Announcement";
+
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 import RightArrow from "@/public/angle-circle-right-icon.svg";
 import Registration from "@/public/add-boy-user-icon.svg";
@@ -12,9 +14,6 @@ import Details from "@/public/resume-cv-icon.svg";
 import ImportExport from "@/public/switch-icon.svg";
 import Communication from "@/public/discussion-icon.svg";
 import FooterImage from "@/public/footer.png";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-
-import Logo from "@/public/favicon-32x32.png";
 
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
