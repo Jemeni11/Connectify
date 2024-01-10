@@ -1,4 +1,5 @@
 "use client";
+import React, { useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Announcement from "@/components/Announcement";
@@ -16,19 +17,6 @@ import Communication from "@/public/discussion-icon.svg";
 import FooterImage from "@/public/footer.png";
 
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-
-function scrollToNextSection(): void {
-  // Calculate the target scroll position based on the current scroll position and viewport height
-  const currentScrollPosition = window.scrollY;
-  const viewportHeight = window.innerHeight;
-  const targetScrollPosition = currentScrollPosition + viewportHeight;
-
-  // Use smooth scrolling for a better user experience
-  window.scrollTo({
-    top: targetScrollPosition,
-    behavior: "smooth",
-  });
-}
 
 type featuresGridItemType = { title: string; icon: StaticImageData | any; description: string };
 
@@ -139,6 +127,19 @@ const GitHub = () => (
 );
 
 export default function Home() {
+  const targetElementRef = useRef<HTMLDivElement>(null);
+
+  const scrollToNextSection = () => {
+    if (targetElementRef.current) {
+      window.scrollTo({
+        top: targetElementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    } else {
+      console.error("Target element ref not available");
+    }
+  };
+
   return (
     <>
       <div className="flex min-h-screen flex-col">
@@ -173,7 +174,7 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <div className="min-h-screen px-8 py-6 md:px-12">
+      <div className="min-h-screen px-8 py-6 md:px-12" ref={targetElementRef}>
         <span className="mb-2 block text-left text-sm font-medium text-duskyRed md:text-center md:text-lg">Everything you need</span>
         <h2 className="mb-4 text-left text-2xl font-bold md:text-center md:text-3xl">No space for a regular contact app? No problem.</h2>
         <p className="mb-4 text-left text-xl font-light md:text-center md:text-2xl">
