@@ -82,7 +82,7 @@ const featuresPartTwo: { title: string; content: string }[] = [
   {
     title: "Contact Sharing",
     content:
-      "Share contact information with others effortlessly. Whether it's sending a colleague's contact details to a client or sharing a friend's info with a group, ConnexusLink makes it simple.",
+      "Share contact information with others effortlessly. Whether it's sending a colleague's contact details to a client or sharing a friend's info with a group, Connectify makes it simple.",
   },
   {
     title: "Contact Notes",
@@ -92,30 +92,30 @@ const featuresPartTwo: { title: string; content: string }[] = [
   {
     title: "Contact Birthdays/Reminders",
     content:
-      "Never miss a special day. ConnexusLink helps you remember birthdays, anniversaries, and other important dates. Set reminders and celebrate with your loved ones.",
+      "Never miss a special day. Connectify helps you remember birthdays, anniversaries, and other important dates. Set reminders and celebrate with your loved ones.",
   },
   {
     title: "Contact Deletion",
     content:
-      "Declutter your contacts. Remove outdated or irrelevant contacts easily. ConnexusLink ensures your contact list stays clean and organized.",
+      "Declutter your contacts. Remove outdated or irrelevant contacts easily. Connectify ensures your contact list stays clean and organized.",
   },
   {
     title: "Responsive Design",
     content:
-      "Access your contacts from anywhere, on any device. ConnexusLink is fully responsive, ensuring a seamless experience whether you're on your phone, tablet, or desktop.",
+      "Access your contacts from anywhere, on any device. Connectify is fully responsive, ensuring a seamless experience whether you're on your phone, tablet, or desktop.",
   },
   {
     title: "User Settings",
-    content: "Tailor ConnexusLink to your preferences. Customize themes, language, and privacy settings to make the app truly your own.",
+    content: "Tailor Connectify to your preferences. Customize themes, language, and privacy settings to make the app truly your own.",
   },
   {
     title: "User Profile",
-    content: "Personalize your profile. Update your information and profile picture to keep your ConnexusLink experience unique.",
+    content: "Personalize your profile. Update your information and profile picture to keep your Connectify experience unique.",
   },
   {
     title: "Error Handling and Validation",
     content:
-      "Enjoy a hassle-free experience. ConnexusLink is designed with meticulous error handling and validation to ensure smooth interactions and data accuracy.",
+      "Enjoy a hassle-free experience. Connectify is designed with meticulous error handling and validation to ensure smooth interactions and data accuracy.",
   },
 ];
 
