@@ -1,3 +1,5 @@
+import { SignIn } from "@clerk/nextjs";
+
 export default function Auth() {
-  return <div>Auth</div>;
+  return <SignIn />;
 }
