@@ -15,6 +15,7 @@ const config = {
     extend: {
       colors: {
         duskyRed: "#86352E",
+        duskyRedHover: "#a13d34",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

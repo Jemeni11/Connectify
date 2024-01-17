@@ -160,8 +160,8 @@ export default function Home() {
               experience with speed and simplicity.
             </p>
             <div className="flex w-full gap-x-2 sm:w-1/2 lg:gap-x-4">
-              <Button className="flex-1 bg-duskyRed text-white hover:bg-[#a13d34]" asChild>
-                <Link href="/auth">Get Started</Link>
+              <Button className="flex-1 bg-duskyRed text-white hover:bg-duskyRedHover" asChild>
+                <Link href="/sign-up">Get Started</Link>
               </Button>
               <Button variant="outline" className="flex-1" onClick={() => scrollToNextSection()}>
                 <span className="mr-2">Learn More</span>
@@ -232,8 +232,8 @@ export default function Home() {
             <p className="mb-2">Ready to dive in?</p>
             <p>Start using Connectify today!</p>
           </div>
-          <Button className="bg-duskyRed text-white hover:bg-[#a13d34]" asChild>
-            <Link href="/auth">Get Started</Link>
+          <Button className="bg-duskyRed text-white hover:bg-duskyRedHover" asChild>
+            <Link href="/sign-up">Get Started</Link>
           </Button>
         </div>
       </div>
