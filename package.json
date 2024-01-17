@@ -15,6 +15,7 @@
     "@ducanh2912/next-pwa": "^10.1.0",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@tanstack/react-table": "^8.11.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.306.0",
